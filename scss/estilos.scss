@@ -1,0 +1,74 @@
+$footer-color: coral;
+
+$fondo: skyblue;
+
+$fondo2: beige;
+
+p {
+  @if $fondo == skyblue {
+    color: ghostwhite;
+  } @else {
+    color: black;
+  }
+}
+
+h2 {
+  animation-name: titulos;
+  animation-duration: 2s;
+
+  @if $fondo == skyblue {
+    color: ghostwhite;
+  } @else {
+    color: black;
+  }
+}
+
+#servicios {
+  background-color: $fondo2;
+}
+
+#portfolio {
+  background-color: $fondo;
+  h2 {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    animation-name: titulos;
+    animation-duration: 2s;
+    font-size: 3em;
+  }
+}
+
+#conoceme {
+  background-color: $fondo;
+}
+
+footer {
+  background-color: $footer-color;
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+  a {
+    border-bottom: none;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+}
+
+@keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

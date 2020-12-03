@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.nav-brand img {
+  height: 40px;
+  padding-left: 20px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.derecha {
+  position: fixed;
+  left: 1400px;
+
+  direction: rtl;
+}
+
+.izq {
+  position: fixed;
+  left: 1100px;
+  bottom: 220px;
+}
+
+.arriba {
+  position: fixed;
+  top: 200px;
+}
+
+.li {
+}
+
+.navbar-nav li a {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.titulo {
+}
+
+#Home {
+  padding-top: 5%;
+}
+.abajo {
+  margin-bottom: 0;
+}
+
+h2 {
+  animation-name: titulos;
+  animation-duration: 2s;
+}
+
+.arriba {
+  width: 100%;
+}
+
+.azul {
+  background-color: skyblue;
+}
+
+#portfolio h2 {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  animation-name: titulos;
+  animation-duration: 2s;
+  font-size: 3em;
+}
+
+#conoceme {
+  background-color: skyblue;
+}
+
+footer {
+  background-color: coral;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  list-style-type: none;
+  user-select: none;
+  user-select: none;
+}
+
+footer a {
+  border-bottom: none;
+}
+
+footer img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+@keyframes titulos {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
